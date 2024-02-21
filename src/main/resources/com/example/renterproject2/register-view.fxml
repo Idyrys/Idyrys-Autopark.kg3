@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="451.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.renterproject2.controllers.RegisterController">
+   <children>
+      <GridPane layoutX="101.0" layoutY="98.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.66668701171875" minWidth="10.0" prefWidth="159.99995930989581" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="172.66670735677087" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Введите имя :" />
+            <Label text="Введите фамилия :" GridPane.rowIndex="1" />
+            <Label text="Введите inn :" GridPane.rowIndex="2" />
+            <Label text="Введите номер телефона :" GridPane.rowIndex="3" />
+            <Label text="Введите водительских прав :" GridPane.rowIndex="4" />
+            <TextField fx:id="txtFirstName" GridPane.columnIndex="1" />
+            <TextField fx:id="txtLastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtInn" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtPhoneNumber" promptText="996 XXX XXX XXX" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtRight" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnSave" defaultButton="true" layoutX="268.0" layoutY="213.0" mnemonicParsing="false" onAction="#onSaveClicked" prefHeight="25.0" prefWidth="85.0" text="Сохранить" />
+   </children>
+</AnchorPane>
