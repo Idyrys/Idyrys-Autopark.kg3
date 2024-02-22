@@ -133,10 +133,6 @@ public class CarServicesImpl implements CarServices {
                             Alert alert = new Alert(Alert.AlertType.INFORMATION, "Успешно забронировано !");
                             alert.show();
                             return;
-                        }else {
-                            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Машин  с id = "+carId+" не существует !");
-                            alert.show();
-                            return;
                         }
                     }
 
