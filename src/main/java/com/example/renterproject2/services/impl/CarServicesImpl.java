@@ -47,12 +47,6 @@ public class CarServicesImpl implements CarServices {
                             return;
                         }
                     }
-
-
-                } else {
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION, "Ошибка !");
-                    alert.show();
-                    return;
                 }
             }
 
@@ -91,12 +85,6 @@ public class CarServicesImpl implements CarServices {
                             return;
                         }
                     }
-
-
-                } else {
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION, "Ошибка !");
-                    alert.show();
-                    return;
                 }
             }
 
@@ -135,8 +123,6 @@ public class CarServicesImpl implements CarServices {
                             return;
                         }
                     }
-
-
                 }
             }
 
